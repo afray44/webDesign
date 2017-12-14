@@ -1,0 +1,184 @@
+body {
+    background: linear-gradient(#66ffff, #00a3cc);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: white;
+}
+
+#header {
+    position: relative;
+}
+
+#headerPic {
+    width: 100%;
+}
+
+nav[role="custom-dropdown"] {
+  label {
+    display: none;
+  }
+}
+
+#content {
+    background-color: #006680;
+    
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+
+#pc {
+    display: block;
+    width: 50%;
+    border-style: solid;
+    border-radius: 100px;
+    margin: auto;
+    
+}
+
+#music {
+    height: 400px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#program {
+    height: 400px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#game {
+    height: 400px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#friend {
+    height: 400px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media (min-width: 801px) {
+    li:hover {
+        font-size: 23px;
+    }
+}
+
+.mySlides > img {
+    align-content: center;
+    margin: auto;
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    a:hover {
+        none;
+    }
+
+#music {
+    height: 240px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#program {
+    height: 240px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#game {
+    height: 240px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+#friend {
+    height: 240px;
+    border-style: solid;
+    border-radius: 150px;
+    margin: auto;
+    display: block;
+}
+
+  
+
+    ul {
+      display: none;
+      height: 100%;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    label:after {
+        position: absolute;
+        content: "\2261";
+        font-size: 40px;
+    }
+    
+    input:checked ~ ul {
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        height: 180px;
+        margin-top: 10px;
+      > li {
+        width: 100%;
+      }        
+    }
+    input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+}

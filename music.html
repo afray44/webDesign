@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="music.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <img src="pics/head.jpg" id="headerPic"> 
+        </div>
+            <nav role="custom-dropdown">
+                <input type="checkbox" id="menu">
+                <label for="menu" onclick></label>
+                <ul id="smallLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a>Projects</a></li>
+                </ul>
+            </nav>
+        <h1>My music gear</h1>
+        <div id="content">
+            <div>
+                  <img class="mySlides" src="slides/3J6RMYT.jpg" style="width:100%">
+                  <img class="mySlides" src="slides/xlarge.png" style="width:100%">
+                  <img class="mySlides" src="slides/YAM-APX500III-BL_d.jpg" style="width:100%">
+                  <div  style="width:100%">
+                  <div onclick="plusDivs(1)">&#10095;</div>
+                </div>
+            </div>
+            <p>Alto Saxophone: Cannonball</p>
+            <p>Guitar: ESP KH-202</p>
+            <p>Guitar: Yamaha APX 500</p>
+        </div>
+    </body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>    
+</html>

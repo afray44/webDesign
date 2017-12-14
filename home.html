@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <title>Welcome to Alec's Website!</title>
+    </head>
+    <body>
+        <div id="header">
+            <img src="pics/head.jpg" id="headerPic"> 
+        </div>
+        <nav role="custom-dropdown">
+            <input type="checkbox" id="menu">
+            <label for="menu" onclick></label>
+            <ul id="smallLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <h1 id="welcome">Alec Fray The Official Website</h1>
+        <div id="content">
+            <div id="context">
+                <p>Alec is a Senior at Rutgers University majoring in ITI and minoring in Computer Science and Music. Alec has many interests such as playing games, playing instruments and as of lately, digital art. Please see Contact for further inqueries.</p>
+                <span></span>
+                <p>I also like to build PCs whenever I have the chance!</p>
+                <span></span>
+                <span></span>
+                <p>My most recent build.</p>
+            </div>
+            <img id="pc" src="slides/IMG_0535.JPG">
+            <div class="Slides">
+                <div class="mySlides">
+                    <h1>Programmer</h1>
+                    <img id="program" src="slides/IMG_0601.jpg">
+                </div>
+                <div class="mySlides">
+                    <h1>Musician</h1>
+                    <img class="ss" id="music" src="slides/388316_278701338832242_160371497_n.jpg">
+                </div>
+                <div class="mySlides">
+                    <h1>Gamer</h1>
+                    <img class="ss" id="game" src="slides/IMG_0597.JPG">
+                </div>
+                <div class="mySlides">
+                    <h1>Friend</h1>
+                    <img class="ss" id="friend" src="slides/IMG_3235.JPG">
+                </div>
+            </div>
+            <p>DMs are always open!</p>
+        </div>
+        
+    </body>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>

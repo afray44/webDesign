@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(#66ffff, #00a3cc);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#content {
+    background-color: #006680;
+    
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+
+#header {
+    position: relative;
+}
+
+#headerPic {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media (min-width: 801px) {
+    li:hover {
+        font-size: 23px;
+    }
+}
+.mySlides {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    a:hover {
+        none;
+    } 
+  
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.social > div {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    margin: 30px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.social > div:hover {
+    background-color: darkblue;
+    font-size: 20px;
+    -webkit-transition: font-size 700ms, background-color 700ms linear;
+    opacity: 1;
+}
+    
+    ul {
+      display: none;
+      height: 100%;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    label:after {
+        position: absolute;
+        content: "\2261";
+        font-size: 40px;
+    }
+    
+    input:checked ~ ul {
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        height: 180px;
+        margin-top: 10px;
+      > li {
+        width: 100%;
+      }        
+    }
+    input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}

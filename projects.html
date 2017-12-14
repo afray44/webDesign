@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="projects.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <img src="pics/head.jpg" id="headerPic"> 
+        </div>
+            <nav role="custom-dropdown">
+                <input type="checkbox" id="menu">
+                <label for="menu" onclick></label>
+                <ul id="smallLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        <h1>My personal projects</h1>
+        <p>Some things that I've made throughout the years</p>
+        <div>
+            <div class="Slides">
+                <div class="mySlides">
+                    <h1>Pokemon Damage Calculator App</h1>
+                    <img class="ss" src="slides/pokeball.png">
+                </div>
+                <div class="mySlides">
+                    <h1>SplitSec</h1>
+                    <img class="ss" id="music" src="slides/IMG_0622.JPG">
+                </div>
+                <div class="mySlides">
+                    <h1>League of Legends Game Prep</h1>
+                    <img class="ss" id="game" src="slides/lol.png">
+                    <p></p>
+                </div>
+            </div>
+            <span></span>
+            <h1>Pokemon Damage Calculator App</h1>
+            <p>I created this application in an attempt to learn Apple's new programming language, Swift. I based it on an online calculator used in a Pokemon battle simulator as I found out that there was no calculator available for mobile devices if you were battleing on the go!</p>
+            <p>One of the key features of this app is the ability to view a Pokemon's dex entry in addition to calculating battle damage.</p>
+            <h1>SplitSec</h1>
+            <p>SplitSec is a two way application that allows you to pay for your restaurant meals in a simple way. It seems much to often that a group meal is ruined when the bill comes and everyone is trying to figure out how to pay for it. SplitSec allows users to pick exactly what they ordered and pay for just that using the payment method of their choice.</p>
+            <p>This project was created this past semester for ITI 210 and has won First place in the students' choice in the Fall 2017 ITI Schowcase.</p>
+            <h1>League of Legends Game Prep</h1>
+            <p>This is a small website I created during the last Hackathon hosted at Rutgers. It uses the Riot Games api to get information on the players in one's League of Legends game after entering thier own. This will inform the player their opponenet's and teamate's ranking, skill with the champion they are playing and more.</p> 
+            <p>I created with the purpose of learning how to make api calls and parse them for my use. I also intended to replace a favorite website of mine that also did the same.</p>
+        </div>
+    </body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</html>
